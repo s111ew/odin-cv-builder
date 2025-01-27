@@ -1,0 +1,53 @@
+.section-list {
+  padding: none;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url("../assets/SF-Pro-Display-Regular.otf");
+}
+
+body {
+  font-family: "SF Pro", Arial, Helvetica, sans-serif;
+  --dark-grey: #1a1a1a;
+  --grey: #404040;
+  background-color: var(--dark-grey);
+  color: white;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  justify-content: center;
+}
+
+.section-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.inputs {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-container > input {
+  background-color: var(--grey);
+  border: none;
+  padding: 15px 7px;
+  border-radius: 5px;
+  color: white;
+}
